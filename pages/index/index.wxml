@@ -1,0 +1,103 @@
+<view class="content">
+  <!-- 轮播图 -->
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" width="355" height="150" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <!-- 影院信息 -->
+  <!-- 0 -->
+  <!-- <block wx:for="{{movie}}" wx:key="this">
+  <view class="movie">
+    <view class="pic">
+      <image src="{{item.image.medium}}" mode='aspectFill'></image>
+    </view>
+    <view class="movie-info">
+      <view class="base-info">
+        <text>电影名称：{{item.title}}\n导演：{{item.directors[0}.name}\n演员:<text wx:for="{{item.casts}}" wx:key="*this">{{item.name}}</text>
+        </text>
+      </view>
+    </view>
+  </view>
+  </block> -->
+  
+  <!-- 1 -->
+  <view class="movie">
+    <view class="pic">
+      <image src="../../img/流浪地球.jpg" mode='aspectFill'></image>
+    </view>
+    <view class="movie-info">
+      <view class="base-info">
+        <text>{{"电影名称：流浪地球\n导演：郭帆\n演员:吴京"}}</text>
+      </view>
+    </view>
+  </view>
+
+<!-- 2 -->
+  <view class="movie">
+    <view class="pic">
+      <image src="../../img/流浪地球.jpg" mode='aspectFill'></image>
+    </view>
+    <view class="movie-info">
+      <view class="base-info">
+        <text>{{"电影名称：流浪地球\n导演：郭帆\n演员:吴京"}}</text>
+      </view>
+    </view>
+  </view>
+
+
+<!-- 3 -->
+  <view class="movie">
+    <view class="pic">
+      <image src="../../img/流浪地球.jpg" mode='aspectFill'></image>
+    </view>
+    <view class="movie-info">
+      <view class="base-info">
+        <text>{{"电影名称：流浪地球\n导演：郭帆\n演员:吴京"}}</text>
+      </view>
+    </view>
+  </view>
+
+
+<!-- 4 -->
+  <view class="movie">
+    <view class="pic">
+      <image src="../../img/流浪地球.jpg" mode='aspectFill'></image>
+    </view>
+    <view class="movie-info">
+      <view class="base-info">
+        <text>{{"电影名称：流浪地球\n导演：郭帆\n演员:吴京"}}</text>
+      </view>
+    </view>
+  </view>
+
+
+<!-- 5 -->
+  <view class="movie">
+    <view class="pic">
+      <image src="../../img/流浪地球.jpg" mode='aspectFill'></image>
+    </view>
+    <view class="movie-info">
+      <view class="base-info">
+        <text>{{"电影名称：流浪地球\n导演：郭帆\n演员:吴京"}}</text>
+      </view>
+    </view>
+  </view>
+
+<!-- 6 -->
+  <view class="movie">
+    <view class="pic">
+      <image src="{{movie[0].images.medium}}" mode='aspectFill'></image>
+      <!-- src="{{movie[0].images.medium}}.jpg" -->
+    </view>
+    <view class="movie-info">
+      <view class="base-info">
+        <!-- 演员遍历 -->
+        <text>"电影名称：{{movie[0].title}}\n导演：{{movie[0].directors}}\n演员:<text wx:for="{{movie[0].casts}}">
+        {{item.name}},</text>{{movie[0].casts[0].name}}"</text>
+      </view>
+    </view>
+  </view>
+</view>

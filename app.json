@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/yingyuan/yingyuan",
+    "pages/chaxun/chaxun"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "喵喵电影",
+    "navigationBarTextStyle": "white"
+  },
+  
+   "tabBar": {
+   
+     "color":"#888",
+     "selectedColor": "#09BB07",
+     "backgroundColor": "#000",
+     "list": [
+       {
+       "pagePath": "pages/index/index",
+       "text": "当前热映",
+       "iconPath": "./icon/首页2.jpg",
+       "selectedIconPath": "./icon/首页.jpg"
+     },
+     {
+     "pagePath":"pages/yingyuan/yingyuan",
+    "text": "影院选择",
+    "iconPath": "./icon/discovery_normal.png",
+    "selectedIconPath": "./icon/discovery_active.png"
+    },
+    {
+      "pagePath": "pages/chaxun/chaxun",
+      "text": "查询",
+      "iconPath": "./icon/friends_normal.png",
+      "selectedIconPath": "./icon/friends_active.png"
+    }
+    ]
+   
+   }
+}
